@@ -63,9 +63,49 @@ namespace FormRestaurante.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap btnIniciarSesion {
+            get {
+                object obj = ResourceManager.GetObject("btnIniciarSesion", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap iniciarsesionbtn {
+            get {
+                object obj = ResourceManager.GetObject("iniciarsesionbtn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Portada {
             get {
                 object obj = ResourceManager.GetObject("Portada", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Wings_Planet {
+            get {
+                object obj = ResourceManager.GetObject("Wings Planet", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Wings_Planet_logo {
+            get {
+                object obj = ResourceManager.GetObject("Wings Planet logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
