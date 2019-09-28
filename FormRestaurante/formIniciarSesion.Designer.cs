@@ -1,6 +1,6 @@
 ﻿namespace FormRestaurante
 {
-    partial class Form1
+    partial class formIniciarSesion
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -114,6 +114,7 @@
             this.pbIniciarSesion.Size = new System.Drawing.Size(261, 52);
             this.pbIniciarSesion.TabIndex = 8;
             this.pbIniciarSesion.TabStop = false;
+            this.pbIniciarSesion.Click += new System.EventHandler(this.PbIniciarSesion_Click);
             // 
             // Form1
             // 
