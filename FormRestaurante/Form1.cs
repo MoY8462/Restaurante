@@ -10,9 +10,5 @@ namespace FormRestaurante
             InitializeComponent();
         }
 
-        private void PbIniciarSesion_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
