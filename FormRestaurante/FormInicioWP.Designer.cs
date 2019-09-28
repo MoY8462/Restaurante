@@ -1,6 +1,6 @@
 ﻿namespace FormRestaurante
 {
-    partial class WingsPlanetInicio
+    partial class FormInicioWP
     {
         /// <summary>
         /// Required designer variable.
