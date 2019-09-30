@@ -12,8 +12,11 @@ namespace FormRestaurante
 {
     public partial class formMenuPrincipal : Form
     {
-        public formMenuPrincipal()
+        private Form formPadre;
+
+        public formMenuPrincipal(Form formPadre)
         {
+            this.formPadre = formPadre;
             InitializeComponent();
         }
     }
