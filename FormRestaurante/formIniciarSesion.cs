@@ -6,9 +6,10 @@ namespace FormRestaurante
 {
     public partial class formIniciarSesion : Form
     {
-
+        private formMenuPrincipal formMP;
         string[] usuarios;
         string[] contrasenas;
+        ErrorProvider miError;
 
         public formIniciarSesion()
         {
@@ -34,19 +35,19 @@ namespace FormRestaurante
 
             if (usuario == usuarios[0] && contrasena == contrasenas[0])
             {
-                if (formMenuPrincipal == null)
+                if (formMP == null)
                 {
-                    formJuego = new formIniciarSesion(this);
-                    formJuego.Show();
+                    formMP = new formMenuPrincipal(this);
+                    formMP.Show();
                     this.Hide();
-                    formJuego = null;
+                    formMP = null;
                 }
-                mierror.Clear();
+                miError.Clear();
 
             }
             else
             {
-                mierror.SetError(txtbContraseña, "Contraseña incorrecta");
+                miError.SetError(txtPassword, "Contraseña incorrecta.");
             }
         }
     }
