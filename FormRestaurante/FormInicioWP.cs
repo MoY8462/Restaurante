@@ -5,14 +5,16 @@ namespace FormRestaurante
 {
     public partial class FormInicioWP : Form
     {
-        //private Form1 formRegistro;
+        private FormIniciarSesion formRegistro;
 
         public FormInicioWP()
         {
             InitializeComponent();
-            //formRegistro = new Form1(this);
-            //this.Hide();
-            //formRegistro = null;
+            
+        }
+
+        private void TimerPanatallaInicio_Tick(object sender, EventArgs e)
+        {
             System.Threading.Thread.Sleep(5000);
         }
     }

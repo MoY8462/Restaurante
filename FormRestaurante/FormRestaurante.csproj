@@ -44,17 +44,17 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="formIniciarSesion.cs">
+    <Compile Include="FormIniciarSesion.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formIniciarSesion.Designer.cs">
-      <DependentUpon>formIniciarSesion.cs</DependentUpon>
+    <Compile Include="FormIniciarSesion.Designer.cs">
+      <DependentUpon>FormIniciarSesion.cs</DependentUpon>
     </Compile>
-    <Compile Include="formMenuPrincipal.cs">
+    <Compile Include="FormMenuPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="formMenuPrincipal.Designer.cs">
-      <DependentUpon>formMenuPrincipal.cs</DependentUpon>
+    <Compile Include="FormMenuPrincipal.Designer.cs">
+      <DependentUpon>FormMenuPrincipal.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -64,8 +64,8 @@
     <Compile Include="FormInicioWP.Designer.cs">
       <DependentUpon>FormInicioWP.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="formIniciarSesion.resx">
-      <DependentUpon>formIniciarSesion.cs</DependentUpon>
+    <EmbeddedResource Include="FormIniciarSesion.resx">
+      <DependentUpon>FormIniciarSesion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

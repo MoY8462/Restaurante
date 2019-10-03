@@ -1,6 +1,6 @@
 ﻿namespace FormRestaurante
 {
-    partial class formIniciarSesion
+    partial class FormIniciarSesion
     {
         /// <summary>
         /// Variable del diseñador necesaria.

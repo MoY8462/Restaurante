@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace FormRestaurante
 {
-    public partial class formMenuPrincipal : Form
+    public partial class FormMenuPrincipal : Form
     {
         private Form formPadre;
 
-        public formMenuPrincipal(Form formPadre)
+        public FormMenuPrincipal(Form formPadre)
         {
             this.formPadre = formPadre;
             InitializeComponent();

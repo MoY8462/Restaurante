@@ -28,9 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            this.timerPanatallaInicio = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
-            // WingsPlanetInicio
+            // timerPanatallaInicio
+            // 
+            this.timerPanatallaInicio.Tick += new System.EventHandler(this.TimerPanatallaInicio_Tick);
+            // 
+            // FormInicioWP
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -38,12 +44,14 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.DoubleBuffered = true;
-            this.Name = "WingsPlanetInicio";
+            this.Name = "FormInicioWP";
             this.Text = "WingsPlanetInicio";
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Timer timerPanatallaInicio;
     }
 }

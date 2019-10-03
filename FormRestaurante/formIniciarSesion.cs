@@ -1,18 +1,18 @@
 ﻿using System;
 using System.Windows.Forms;
-using Usuarios;
 
 namespace FormRestaurante
 {
-    public partial class formIniciarSesion : Form
+    public partial class FormIniciarSesion : Form
     {
-        private formMenuPrincipal formMP;
         string[] usuarios;
         string[] contrasenas;
-        ErrorProvider miError;
+        //ErrorProvider miError;
 
-        public formIniciarSesion()
+        public FormIniciarSesion()
         {
+            FormInicioWP formInicioWP = new FormInicioWP();
+            formInicioWP.Show();
             InitializeComponent();
 
             usuarios = new string[]
@@ -30,14 +30,14 @@ namespace FormRestaurante
 
         private void PbIniciarSesion_Click(object sender, EventArgs e)
         {
-            string usuario = txtNombre.Text;
+            /*string usuario = txtNombre.Text;
             string contrasena = txtPassword.Text;
 
             if (usuario == usuarios[0] && contrasena == contrasenas[0])
             {
                 if (formMP == null)
                 {
-                    formMP = new formMenuPrincipal(this);
+                    formMP = new FormMenuPrincipal(this);
                     formMP.Show();
                     this.Hide();
                     formMP = null;
@@ -48,7 +48,7 @@ namespace FormRestaurante
             else
             {
                 miError.SetError(txtPassword, "Contraseña incorrecta.");
-            }
+            }*/
         }
     }
 }
