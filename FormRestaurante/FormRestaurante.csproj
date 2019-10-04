@@ -39,9 +39,6 @@
     <Reference Include="System.Drawing.Design" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
-    <Reference Include="Usuario">
-      <HintPath>..\Usuario\bin\Debug\Usuario.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FormIniciarSesion.cs">
@@ -56,6 +53,12 @@
     <Compile Include="FormMenuPrincipal.Designer.cs">
       <DependentUpon>FormMenuPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormRegistrar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRegistrar.Designer.cs">
+      <DependentUpon>FormRegistrar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="FormInicioWP.cs">
@@ -64,8 +67,12 @@
     <Compile Include="FormInicioWP.Designer.cs">
       <DependentUpon>FormInicioWP.cs</DependentUpon>
     </Compile>
+    <Compile Include="Validar.cs" />
     <EmbeddedResource Include="FormIniciarSesion.resx">
       <DependentUpon>FormIniciarSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRegistrar.resx">
+      <DependentUpon>FormRegistrar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -107,6 +114,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Wings Planet logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Usuario\Usuarios.csproj">
+      <Project>{a2e7c73a-d2fd-4838-beec-889d1d21cd06}</Project>
+      <Name>Usuarios</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
